@@ -9,7 +9,7 @@
 <LinearLayout
     android:id="@+id/t1"
     android:paddingTop="5dp"
-    android:layout_marginRight="40dp"
+    android:layout_marginRight="15dp"
     android:fitsSystemWindows="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
@@ -30,7 +30,7 @@
 </LinearLayout>
     <LinearLayout
         android:layout_marginTop="4dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/shadow"
         android:fitsSystemWindows="true"
         android:paddingTop="5dp"
@@ -81,7 +81,7 @@
             android:textAlignment="center"
             android:textColor="@color/whiteicon"
             android:text="00"
-            android:layout_width="72dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content" />
 
         <ImageView

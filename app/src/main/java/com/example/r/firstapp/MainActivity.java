@@ -28,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
-                    //mTextMessage.setText(R.string.title_shop);
+                    Fragment frag1=new Shop();
+                    FragmentManager fm1=getFragmentManager();
+                    FragmentTransaction ft1=fm1.beginTransaction();
+                    ft1.replace(R.id.contain,frag1);
+                    ft1.commit();
                     return true;
                 case R.id.navigation_notice:
-                    //mTextMessage.setText(R.string.title_notice);
+                    Fragment frag2=new Notice();
+                    FragmentManager fm2=getFragmentManager();
+                    FragmentTransaction ft2=fm2.beginTransaction();
+                    ft2.replace(R.id.contain,frag2);
+                    ft2.commit();
                     return true;
                 case R.id.navigation_game:
                     Fragment frag=new Play();
@@ -41,10 +49,18 @@ public class MainActivity extends AppCompatActivity {
                     ft.commit();
                     return true;
                 case R.id.navigation_career:
-                    //mTextMessage.setText(R.string.title_career);
+                    Fragment frag3=new Career();
+                    FragmentManager fm3=getFragmentManager();
+                    FragmentTransaction ft3=fm3.beginTransaction();
+                    ft3.replace(R.id.contain,frag3);
+                    ft3.commit();
                     return true;
                 case R.id.navigation_profile:
-                    //mTextMessage.setText(R.string.title_profile);
+                    Fragment frag4=new Profile();
+                    FragmentManager fm4=getFragmentManager();
+                    FragmentTransaction ft4=fm4.beginTransaction();
+                    ft4.replace(R.id.contain,frag4);
+                    ft4.commit();
                     return true;
             }
             return false;
