@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/t1"
+    android:paddingTop="5dp"
+    android:layout_marginRight="40dp"
+    android:fitsSystemWindows="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginRight="2dp"
+        android:id="@+id/vip"
+        android:src="@drawable/vip"
+        android:layout_width="25dp"
+        android:layout_weight="1"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:textColor="@color/whiteicon"
+        android:text="InActivated"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shadow"
+        android:fitsSystemWindows="true"
+        android:paddingTop="5dp"
+        android:id="@+id/t2"
+        android:layout_toRightOf="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:src="@drawable/diamond_256"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:textAlignment="center"
+            android:textColor="@color/whiteicon"
+            android:text="00"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingBottom="5dp"
+            android:src="@drawable/plus_128"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shadow"
+        android:fitsSystemWindows="true"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:src="@drawable/dollar_128"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:textAlignment="center"
+            android:textColor="@color/whiteicon"
+            android:text="00"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingBottom="5dp"
+            android:src="@drawable/plus_128"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+</RelativeLayout>
