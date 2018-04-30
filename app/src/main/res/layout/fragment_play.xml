@@ -46,7 +46,7 @@
             android:src="@drawable/add_user_32"/>
 
         <TextView
-            android:text="CLUBB"
+            android:text="CLUBBB"
             android:textSize="25dp"
             android:textAlignment="center"
             android:textColor="@color/whiteicon"
