@@ -102,7 +102,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="170dp"
+                android:layout_width="171dp"
                 android:layout_height="80dp"
                 android:src="@drawable/globaltournament" />
             <ImageView
