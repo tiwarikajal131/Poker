@@ -15,58 +15,55 @@
         <LinearLayout
             android:paddingTop="15dp"
             android:paddingBottom="20dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:id="@+id/layout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/bag"
-                android:background="@drawable/roundicon"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bag"/>
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/question"
-                android:background="@drawable/roundicon"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/question"/>
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/gift"
-                android:background="@drawable/roundicon"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gift"/>
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/inbox"
-                android:background="@drawable/roundicon"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/inbox"/>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout2"
             android:layout_below="@+id/layout1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp"
+            android:background="@drawable/bar">
             <ImageView
                 android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/add_user_32"/>
-
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_user"/>
             <TextView
-                android:layout_marginLeft="115dp"
-                android:text="CLUB"
-                android:textSize="25dp"
+                android:layout_marginStart="115dp"
+                android:text="@string/club"
+                android:textSize="25sp"
                 android:textAlignment="center"
                 android:textColor="@color/whiteicon"
+                android:layout_marginTop="13dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
             <ImageView
                 android:layout_marginLeft="110dp"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/search_32"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"/>
         </LinearLayout>
 
         <LinearLayout
@@ -75,8 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:paddingTop="25dp"
-                android:src="@drawable/img2"
+                android:src="@drawable/image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -92,10 +88,9 @@
 
         <ImageView
             android:id="@+id/imgVPlayNow"
-            android:src="@drawable/playnow_bt_n"
+            android:src="@drawable/playnow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_centerInParent="true"
             android:layout_alignTop="@+id/llLobbyTournament"
             android:layout_alignBottom="@+id/llHomeGameLeauge"
@@ -108,14 +103,14 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:src="@drawable/lobby1"
+                android:src="@drawable/lobby"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"/>
 
             <ImageView
-                android:src="@drawable/globaltournament1"
+                android:src="@drawable/globaltournament"
                 android:layout_width="wrap_content"
                 android:layout_height="82dp"
                 android:layout_weight="1"
@@ -129,13 +124,13 @@
             android:layout_below="@+id/llLobbyTournament">
 
             <ImageView
-                android:src="@drawable/homegame1"
+                android:src="@drawable/homegame"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"/>
             <ImageView
-                android:src="@drawable/league1"
+                android:src="@drawable/league"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"

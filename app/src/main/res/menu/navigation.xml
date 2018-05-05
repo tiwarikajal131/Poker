@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/navigation_game"
-        android:icon="@drawable/poker"
+        android:icon="@drawable/homeicon"
         android:title="@string/title_game" />
     <item
         android:id="@+id/navigation_career"

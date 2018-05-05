@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="icon">#14f54d</color>
-    <color name="background">#6a716c</color>
+    <color name="background">#343435</color>
     <color name="whiteicon">#f8fcf9</color>
     <color name="shadow">#424542</color>
+    <color name="Golden">#FF8DA10B</color>
 </resources>
