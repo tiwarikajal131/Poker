@@ -10,17 +10,17 @@
        <ImageView
            android:layout_marginTop="30dp"
            android:id="@+id/head1"
-           android:layout_alignParentRight="true"
-           android:layout_alignParentLeft="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentStart="true"
            android:layout_width="100dp"
            android:layout_height="150dp"
            android:layout_marginBottom="5dp"
            android:src="@drawable/head1"/>
        <TextView
            android:id="@+id/tvName"
-           android:text="KajalT"
-           android:textSize="20dp"
-           android:textColor="@color/whiteicon"
+           android:text="@string/user"
+           android:textSize="20sp"
+           android:textColor="@color/icon"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_below="@id/head1"
@@ -71,47 +71,47 @@
                 android:id="@+id/ivpromos"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/promo"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivpromos"
-                android:layout_marginLeft="50dp"
-                android:text="Promos"
+                android:layout_marginStart="50dp"
+                android:text="@string/promos"
                 android:textColor="@color/whiteicon" />
 
             <ImageView
                 android:id="@+id/ivpie"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_toRightOf="@id/ivpromos"
+                android:layout_toEndOf="@id/ivpromos"
                 android:src="@drawable/pie"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivpie"
-                android:layout_marginLeft="130dp"
-                android:text="Home Game"
+                android:layout_marginStart="130dp"
+                android:text="@string/home_game"
                 android:textColor="@color/whiteicon" />
 
             <ImageView
                 android:id="@+id/ivsetting"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/ivpie"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ivpie"
                 android:src="@drawable/setting"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivsetting"
-                android:layout_marginLeft="232dp"
-                android:text="Settings"
+                android:layout_marginStart="232dp"
+                android:text="@string/settings"
                 android:textColor="@color/whiteicon"/>
         </RelativeLayout>
 
@@ -121,54 +121,54 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/rlPromoPie"
             android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/ivcontact"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/contact"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivcontact"
-                android:layout_marginLeft="50dp"
-                android:text="Contact"
+                android:layout_marginStart="50dp"
+                android:text="@string/contact"
                 android:textColor="@color/whiteicon" />
 
             <ImageView
                 android:id="@+id/ivcredits"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_toRightOf="@id/ivcontact"
+                android:layout_toEndOf="@id/ivcontact"
                 android:src="@drawable/credit"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivcredits"
-                android:layout_marginLeft="145dp"
-                android:text="Credits"
+                android:layout_marginStart="145dp"
+                android:text="@string/credits"
                 android:textColor="@color/whiteicon" />
 
             <ImageView
                 android:id="@+id/ivfair_gaming"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/ivcredits"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ivcredits"
                 android:src="@drawable/fair_gaming"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivfair_gaming"
-                android:layout_marginLeft="218dp"
-                android:text="Fair Gaming"
+                android:layout_marginStart="218dp"
+                android:text="@string/fair_gaming"
                 android:textColor="@color/whiteicon" />
 
         </RelativeLayout>

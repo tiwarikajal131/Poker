@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/tt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/whiteicon"
+        android:text="Gold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/close"
+        android:layout_marginTop="5dp"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/close"
+        android:focusable="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tt2"
+        android:layout_below="@id/tt1"
+        android:background="@color/background"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/gold6000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@color/background"
+        android:layout_below="@id/tt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btt1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="70dp"
+            android:id="@+id/tet1"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/whiteicon"
+            android:text="60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:layout_toRightOf="@id/tet1"
+            android:src="@drawable/diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
