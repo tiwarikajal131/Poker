@@ -20,7 +20,7 @@
            android:id="@+id/tvName"
            android:text="KajalT"
            android:textSize="20dp"
-           android:textColor="@color/whiteicon"
+           android:textColor="@color/icon"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_below="@id/head1"
@@ -125,12 +125,14 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:clickable="true"
                 android:id="@+id/ivcontact"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/contact"/>
+                android:src="@drawable/contact"
+                android:focusable="true" />
 
             <TextView
                 android:layout_width="wrap_content"

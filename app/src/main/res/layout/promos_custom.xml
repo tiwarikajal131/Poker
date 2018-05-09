@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="RtlSymmetry">
 
     <TextView
-        android:id="@+id/tv_promos_custom"
+        android:id="@+id/title"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/bar"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textColor="@color/whiteicon"
+        android:text="Promos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/close"
+        android:layout_marginTop="5dp"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/close"
+        android:focusable="true" />
+    <TextView
+        android:paddingStart="10dp"
+        android:layout_below="@+id/title"
+        android:background="@color/background"
+        android:id="@+id/tv_promo1_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="        PPPoker offers tons of diamonds and cash
-        rewards for PPPoker users who can help us
-        promote our product to areas outside your
-        country.
+        android:scrollbars="vertical"
+        android:text="@string/promo1"
+        android:textColor="@color/whiteicon" />
 
-        If you have any global resources that may
-        help us, be free to contact us at
-        info@pppoker.net and leave your contact."/>
-
-    <Button
+    <TextView
+        android:paddingStart="10dp"
+        android:background="@color/background"
+        android:id="@+id/tv_promo2_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_promos_custom"
-        android:text="Confirm" />
+        android:layout_below="@id/tv_promo1_custom"
+        android:text="@string/promo2"
+        android:textColor="@color/whiteicon" />
+
+    <TextView
+        android:paddingStart="10dp"
+        android:background="@color/background"
+        android:id="@+id/tv_promo3_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_promo2_custom"
+        android:text="@string/promo3"
+        android:textColor="@color/whiteicon" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_below="@+id/tv_promo3_custom"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/buttonclick"
+            android:clickable="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/confirm_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/whiteicon"
+            android:text="Cofirm"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

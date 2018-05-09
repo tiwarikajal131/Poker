@@ -11,4 +11,11 @@
     <string name="club">CLUB</string>
     <string name="_0000"> 0000</string>
     <string name="user_id">User ID : </string>
+    <string name="promo1">  PPPoker offers tons of diamonds and cash rewards forPPPoker users who can help us promote ourproduct to areas outside your country.</string>
+    <string name="promo2">  If you have any global resources that may help us, be free to contact us at info@pppoker.net and leave your contact number in the mail</string>.
+    <string name="promo3">  Our support team will contact you immediately. Sincere thanks from PPPOker.</string>
+    <string name="email">info@pppoker.net</string>
+    <string name="fb">www.facebook.com</string>
+    <string name="twitter">twitter.com</string>
+    <string name="poker">The PPPoker</string>
 </resources>
