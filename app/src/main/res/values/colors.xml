@@ -1,11 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
     <color name="icon">#14f54d</color>
-    <color name="background">#343435</color>
+    <color name="background">#6a716c</color>
     <color name="whiteicon">#f8fcf9</color>
     <color name="shadow">#424542</color>
-    <color name="Golden">#FF8DA10B</color>
+    <color name="colorBackground">#303030</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#303030</color>
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorAccent1">#FF4081</color>
+    <color name="colorReddishGreay">#424242</color>
+    <color name="colorRed">#de3a38</color>
+    <color name="colorBlue">#09b5ff</color>
+    <color name="colorCyan">#54ffee</color>
+    <color name="colorYellow">#f5e144</color>
+    <color name="colorPink">#ff2ba3</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreay">#cfcfcf</color>
+    <color name="colorGreayDark">#939090</color>
+    <color name="colorTab">#303030</color>
+    <color name="colorText">#ffffff</color>
+    <!--<color name="colorTab">#125688</color>  -->
+
+    <color name="colorPorductOrange">#ddff8400</color>
+    <color name="colorPrimaryBlue">#3F51B5</color>
+    <color name="colorPrimaryDarkBlue">#303F9F</color>
+    <color name="colorGreenLightFlip">#6962ff00</color>
+    <color name="colorGreenLightF">#9263ff02</color>
+    <color name="colorGreen">#408f0e</color>
+    <color name="colorToolbar">#009990</color>
+    <color name="colorLightGreen">#00ff15</color>
+    <color name="colorPinkA40">#F50057</color>
+    <color name="colorPinkWhite">#FCE4EC</color>
+    <color name="colorGrey500">#ffffff</color>
+    <color name="colorGrey5001">#E0E0E0</color>
+    <color name="colorBlueGrey">#ECEFF1</color>
+    <color name="colorOrange">#FF9800</color>
+
+    <color name="colorYellowDark">#ddaa00</color>
+    <color name="colorYellowDarkTransparent">#7dddaa00</color>
+    <color name="colorLightYellow">#aaffffa3</color>
+
+
+    <color name="colorRedLightFlip">#5aff0000</color>
+    <color name="colorRedLightF">#83ff0000</color>
+    <color name="colorPurpal">#271d7b</color>
+    <color name="colorLightGrey">#ececec</color>
+    <color name="colorRedBlood">#fc000d</color>
+    <color name="colorRedLight">#c7c7c7</color>
+    <color name="colorBlackTransper">#b3000000</color>
+    <color name="colorBlackTransperDialog">#987b7b7b</color>
+    <color name="colorBlackTransperDark">#eb000000</color>
+    <color name="colorRollingArrowGrey">#565B5E</color>
+    <color name="colorLogoOrange">#F15F23</color>
+    <color name="colorLogoOrangeDark">#c23900</color>
+
+    <color name="colorBlueBet">#a0d0f2</color>
+    <color name="colorRedBet">#f5afbe</color>
+
+    <color name="colorBlueBetTrasparent">#eba0d0f2</color>
+    <color name="colorRedBetTrasparent">#ebfca2b5</color>
+
+    <color name="colorTrasparent">#00000000</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#b4202020</color>
+    <color name="grayj">#302d2d</color>
+    <color name="navigationBarColor">#000000</color>
 </resources>
