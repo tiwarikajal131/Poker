@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            android:text="Mission"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/close"
+            android:layout_marginTop="5dp"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/close"
+            android:focusable="true" />
+    </RelativeLayout>
+</RelativeLayout>

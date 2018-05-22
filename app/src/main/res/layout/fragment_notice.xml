@@ -10,12 +10,12 @@
         android:id="@+id/lltvnotice"
         android:background="@drawable/bar"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
     <TextView
         android:layout_marginTop="10dp"
         android:textAlignment="center"
-        android:textSize="25dp"
-        android:textColor="@color/whiteicon"
+        android:textSize="25sp"
+        android:textColor="@color/colorWhite"
         android:text="@string/title_notice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

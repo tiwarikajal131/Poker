@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="15dp"
+            android:background="@drawable/bar"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/close"
+            android:focusable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rl1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <RelativeLayout
+            android:background="@drawable/high_light_sng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/TVmusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music Settings"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="12dp"/>
+
+            <ImageView
+                android:id="@+id/IVtoggle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_toggle_button"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/high_light_sng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/TVChangePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="12dp"/>
+
+            <ImageView
+                android:id="@+id/IVchangepass"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/btn_round_go"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:background="@drawable/high_light_sng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/TVLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="12dp"/>
+
+            <ImageView
+                android:id="@+id/IVlanguage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/btn_round_go"
+                android:adjustViewBounds="true"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/high_light_sng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/TVTermsOfService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms Of Service"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/IVterms"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/btn_round_go"
+                android:adjustViewBounds="true"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/high_light_sng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/TVPrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/IVprivacy"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/btn_round_go"
+                android:adjustViewBounds="true"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:background="@color/AppGray"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -7,91 +8,97 @@
     android:layout_height="match_parent">
 
 <LinearLayout
+    android:layout_alignParentStart="true"
     android:id="@+id/t1"
-    android:paddingTop="5dp"
-    android:layout_marginRight="15dp"
-    android:fitsSystemWindows="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <ImageView
+        android:paddingTop="8dp"
+        android:adjustViewBounds="true"
         android:layout_marginTop="4dp"
-        android:layout_marginRight="4dp"
         android:id="@+id/vip"
         android:src="@drawable/vip"
-        android:layout_width="25dp"
+        android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="25dp"/>
     <TextView
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
         android:id="@+id/text1"
-        android:textColor="@color/whiteicon"
+        android:textColor="@color/colorWhite"
         android:text="Inactivated"
         android:paddingTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
     <LinearLayout
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/shadow"
-        android:fitsSystemWindows="true"
-        android:paddingTop="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/t1"
+        android:background="@drawable/score"
         android:id="@+id/t2"
-        android:layout_toRightOf="@+id/t1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="120dp"
+        android:layout_height="30dp">
 
         <ImageView
-            android:paddingBottom="5dp"
-            android:paddingLeft="3dp"
-            android:src="@drawable/diamond_256"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/diamond"
             android:layout_width="25dp"
             android:layout_height="25dp" />
 
         <TextView
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/text2"
             android:textAlignment="center"
-            android:textColor="@color/whiteicon"
+            android:textColor="@color/colorWhite"
             android:text="00"
-            android:layout_width="72dp"
+            android:layout_width="68dp"
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:paddingBottom="5dp"
-            android:src="@drawable/plus_128"
-            android:layout_width="25dp"
-            android:layout_height="25dp" />
+            android:clickable="true"
+            android:id="@+id/plus1"
+            android:layout_marginEnd="2dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:focusable="true" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="4dp"
-        android:background="@drawable/shadow"
-        android:fitsSystemWindows="true"
-        android:paddingTop="5dp"
-        android:layout_toRightOf="@+id/t2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@id/t2"
+        android:background="@drawable/score"
+        android:layout_width="120dp"
+        android:layout_height="30dp">
         <ImageView
-            android:paddingBottom="5dp"
-            android:paddingLeft="3dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/dollar_128"
-            android:layout_width="25dp"
-            android:layout_height="25dp" />
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
 
         <TextView
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/text3"
             android:textAlignment="center"
-            android:textColor="@color/whiteicon"
+            android:textColor="@color/colorWhite"
             android:text="00"
             android:layout_width="70dp"
             android:layout_height="wrap_content" />
 
         <ImageView
+            android:clickable="true"
+            android:id="@+id/plus2"
+            android:layout_marginEnd="2dp"
             android:paddingBottom="5dp"
-            android:src="@drawable/plus_128"
-            android:layout_width="25dp"
-            android:layout_height="25dp" />
+            android:src="@drawable/plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:focusable="true" />
     </LinearLayout>
 </RelativeLayout>

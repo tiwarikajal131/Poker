@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".global">
+
+    <RelativeLayout
+        android:background="@drawable/bar"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="Global Tournament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/IVBack"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slide"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ViewFlipper
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bar"
+        android:layout_below="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shadow"
+            android:fitsSystemWindows="true"
+            android:paddingTop="5dp"
+            android:id="@+id/t2"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingBottom="5dp"
+                android:paddingLeft="3dp"
+                android:src="@drawable/head2"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/text2"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:text="Score : 0"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/plus1"
+                android:paddingBottom="5dp"
+                android:src="@drawable/plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gold"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shadow"
+            android:fitsSystemWindows="true"
+            android:paddingTop="5dp"
+            android:layout_toRightOf="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingBottom="5dp"
+                android:paddingLeft="3dp"
+                android:src="@drawable/dollar_128"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/text3"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:text="00"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/plus2"
+                android:paddingBottom="5dp"
+                android:src="@drawable/plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bag"
+            android:layout_toRightOf="@id/gold"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_toRightOf="@id/bag"
+            android:adjustViewBounds="true"
+            android:src="@drawable/trophy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img1"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar1"
+                    android:layout_toRightOf="@id/img1"
+                    android:layout_below="@+id/txt1"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt1"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar1"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img2"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar2"
+                    android:layout_toRightOf="@id/img2"
+                    android:layout_below="@+id/txt2"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt2"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar2"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img3"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar3"
+                    android:layout_toRightOf="@id/img3"
+                    android:layout_below="@+id/txt3"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt3"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar3"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img4"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar4"
+                    android:layout_toRightOf="@id/img4"
+                    android:layout_below="@+id/txt4"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt4"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar4"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img5"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar5"
+                    android:layout_toRightOf="@id/img5"
+                    android:layout_below="@+id/txt5"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt5"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar5"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img6"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar6"
+                    android:layout_toRightOf="@id/img6"
+                    android:layout_below="@+id/txt6"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt6"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar6"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img7"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar7"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_below="@+id/txt7"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt7"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar7"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img8"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar8"
+                    android:layout_toRightOf="@id/img8"
+                    android:layout_below="@+id/txt8"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt8"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar8"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img9"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar9"
+                    android:layout_toRightOf="@id/img9"
+                    android:layout_below="@+id/txt9"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt9"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar9"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img10"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt10"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img10"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar10"
+                    android:layout_toRightOf="@id/img10"
+                    android:layout_below="@+id/txt10"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt10"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar10"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_info_bg"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/g11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/img11"
+                    android:text="2000 Golds Event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dollar11"
+                    android:layout_toRightOf="@id/img11"
+                    android:layout_below="@+id/txt11"
+                    android:src="@drawable/dollar_128"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/txt11"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/dollar11"
+                    android:text="300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:text="Register"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

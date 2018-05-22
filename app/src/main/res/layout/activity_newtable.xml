@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newtable">
+
+
+    <RelativeLayout
+        android:id="@+id/RLHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="Start a new table"
+            android:background="@drawable/bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id="@+id/close"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/RLtabs"
+        android:layout_below="@+id/RLHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/icon"
+            android:id="@+id/TVNLH"
+            android:text="NLH"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/black"
+            android:layout_toRightOf="@id/TVNLH"
+            android:id="@+id/TVPLO"
+            android:text="PLO"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/black"
+            android:layout_toRightOf="@id/TVPLO"
+            android:id="@+id/TVSNG"
+            android:text="SNG"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@id/RLtabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/LLNLH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/RLNLH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:background="@color/background"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/RLUnnamedTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textColorHint="@color/colorWhite"
+                            android:hint="UnNamed Table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:background="@drawable/score"
+                            android:layout_margin="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:textSize="15dp"
+                                    android:id="@+id/TV2"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/IV2"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TV6"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:id="@+id/IV6"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TV9"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/IV9"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLactiontime"
+                        android:background="@color/background"
+                        android:layout_below="@id/RLUnnamedTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Action Time :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="15s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="20s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="30s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:id="@+id/RLBinds"
+                        android:layout_below="@id/RLactiontime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVBlinds"
+                            android:textColor="@color/colorWhite"
+                            android:text="Blinds :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/seek"
+                            android:layout_below="@+id/TVBlinds"
+                            android:max="1000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLBuyIn"
+                        android:background="@color/background"
+                        android:layout_below="@+id/RLBinds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVBuyin"
+                            android:textColor="@color/colorWhite"
+                            android:text="Buy-In :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/seek1"
+                            android:layout_below="@+id/TVBuyin"
+                            android:max="1000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLAutostart"
+                        android:background="@color/background"
+                        android:layout_below="@+id/RLBuyIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Auto Start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ToggleButton
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:orientation="horizontal"
+                        android:id="@+id/LLAutoStart"
+                        android:layout_below="@id/RLAutostart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLRisk"
+                        android:layout_below="@+id/LLAutoStart"
+                        android:background="@color/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVRiskManagement"
+                            android:textColor="@color/colorWhite"
+                            android:text="Risk Management :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ques"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <CheckBox
+                            android:paddingTop="7dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15dp"
+                            android:id="@+id/CBRun"
+                            android:textColor="@color/colorWhite"
+                            android:text="Run it Multi-Times"
+                            android:layout_below="@+id/TVRiskManagement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:paddingTop="7dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@id/CBRun"
+                            android:id="@+id/CBInsurance"
+                            android:textColor="@color/colorWhite"
+                            android:text="Run it Multi-Times"
+                            android:layout_below="@+id/TVRiskManagement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLRake"
+                        android:background="@color/background"
+                        android:layout_below="@id/RLRisk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVRake"
+                            android:textColor="@color/colorWhite"
+                            android:text="Rake :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_toRightOf="@+id/TVRake"
+                            android:id="@+id/spinner"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="80dp"
+                            android:id="@+id/TVCap"
+                            android:layout_toRightOf="@id/spinner"
+                            android:textColor="@color/colorWhite"
+                            android:text="Cap :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_toRightOf="@+id/TVCap"
+                            android:id="@+id/spinner1"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LLAuthorized"
+                        android:orientation="vertical"
+                        android:layout_below="@id/RLRake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVAuthorized"
+                                android:textColor="@color/colorWhite"
+                                android:text="Authorized to buy in "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TB1"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVGPS"
+                                android:textColor="@color/colorWhite"
+                                android:text="GPS Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TB2"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVIP"
+                                android:textColor="@color/colorWhite"
+                                android:text="IP Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TB3"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/time"
+                        android:background="@color/background"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_below="@id/LLAuthorized"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVTime"
+                            android:textColor="@color/colorWhite"
+                            android:text="Time :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/seek2"
+                            android:max="12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_below="@id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Button
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Start"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:layout_width="180dp"
+                        android:layout_height="40dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:id="@+id/LLPLO"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/RLPLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:background="@color/background"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/RLPLOUnnamedTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textColorHint="@color/colorWhite"
+                            android:hint="UnNamed Table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:background="@drawable/score"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp">
+
+                            <LinearLayout
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:textSize="15dp"
+                                    android:id="@+id/TVPLO2"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/IVPLO2"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TVPLO6"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:id="@+id/IVPLO6"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TVPLO9"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/IVPLO9"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLPLOactiontime"
+                        android:background="@color/background"
+                        android:layout_below="@id/RLPLOUnnamedTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Action Time :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="15s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="20s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="30s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:id="@+id/RLPLOBinds"
+                        android:layout_below="@id/RLPLOactiontime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVPLOBlinds"
+                            android:textColor="@color/colorWhite"
+                            android:text="Blinds :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/PLOseek"
+                            android:layout_below="@+id/TVPLOBlinds"
+                            android:max="1000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLPLOBuyIn"
+                        android:background="@color/background"
+                        android:layout_below="@+id/RLPLOBinds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVPLOBuyin"
+                            android:textColor="@color/colorWhite"
+                            android:text="Buy-In :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/PLOseek1"
+                            android:layout_below="@+id/TVPLOBuyin"
+                            android:max="1000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLPLOAutostart"
+                        android:background="@color/background"
+                        android:layout_below="@+id/RLPLOBuyIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Auto Start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ToggleButton
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:orientation="horizontal"
+                        android:id="@+id/LLPLOAutoStart"
+                        android:layout_below="@id/RLPLOAutostart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textColor="@color/colorWhite"
+                                android:text="3"
+                                android:textSize="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                            <RadioButton
+                                android:textSize="20dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:src="@drawable/profile12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLPLORisk"
+                        android:layout_below="@+id/LLPLOAutoStart"
+                        android:background="@color/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVPLORiskManagement"
+                            android:textColor="@color/colorWhite"
+                            android:text="Risk Management :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ques"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <CheckBox
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/CBPLORun"
+                            android:textColor="@color/colorWhite"
+                            android:text="Run it Multi-Times"
+                            android:layout_below="@+id/TVPLORiskManagement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@id/CBPLORun"
+                            android:id="@+id/CBPLOInsurance"
+                            android:textColor="@color/colorWhite"
+                            android:text="Run it Multi-Times"
+                            android:layout_below="@+id/TVPLORiskManagement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLPLORake"
+                        android:background="@color/background"
+                        android:layout_below="@id/RLPLORisk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVPLORake"
+                            android:textColor="@color/colorWhite"
+                            android:text="Rake :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/TVPLORake"
+                            android:id="@+id/PLOspinner"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="80dp"
+                            android:id="@+id/TVPLOCap"
+                            android:layout_toRightOf="@id/PLOspinner"
+                            android:textColor="@color/colorWhite"
+                            android:text="Cap :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/TVPLOCap"
+                            android:id="@+id/PLOspinner1"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LLPLOAuthorized"
+                        android:orientation="vertical"
+                        android:layout_below="@id/RLPLORake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVPLOAuthorized"
+                                android:textColor="@color/colorWhite"
+                                android:text="Authorized to buy in "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBPLO1"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVPLOGPS"
+                                android:textColor="@color/colorWhite"
+                                android:text="GPS Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBPLO2"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVPLOIP"
+                                android:textColor="@color/colorWhite"
+                                android:text="IP Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBPLO3"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/background"
+                        android:id="@+id/time1"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_below="@id/LLPLOAuthorized"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVPLOTime"
+                            android:textColor="@color/colorWhite"
+                            android:text="Time :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/PLOseek2"
+                            android:max="12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:background="@color/background"
+                        android:layout_below="@+id/time1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorWhite"
+                            android:text="Start"
+                            android:background="@drawable/button"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/LLSNG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/RLSNG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:background="@color/background"
+                        android:id="@+id/RLSNGUnnamedTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp"
+                            android:textColorHint="@color/colorWhite"
+                            android:hint="UnNamed Table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:background="@drawable/score"
+                            android:layout_margin="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp">
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TVSNG6"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:layout_marginTop="2dp"
+                                    android:id="@+id/IVSNG6"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:id="@+id/TVSNG9"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_marginTop="2dp"
+                                    android:id="@+id/IVSNG9"
+                                    android:src="@drawable/profile12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="20dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLSNGactiontime"
+                        android:background="@color/background"
+                        android:layout_below="@id/RLSNGUnnamedTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Action Time :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="15s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="20s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                            <RadioButton
+                                android:textSize="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:text="30s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:id="@+id/RLSNGBinds"
+                        android:layout_below="@id/RLSNGactiontime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVSNGBlinds"
+                            android:textColor="@color/colorWhite"
+                            android:text="Blinds :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/SNGseek"
+                            android:layout_below="@+id/TVSNGBlinds"
+                            android:max="30"
+                            android:min="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/RLSNGBuyIn"
+                        android:background="@color/background"
+                        android:layout_below="@+id/RLSNGBinds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVSNGBuyin"
+                            android:textColor="@color/colorWhite"
+                            android:text="Buy-In :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/SNGseek1"
+                            android:layout_below="@+id/TVSNGBuyin"
+                            android:max="1000"
+                            android:min="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:id="@+id/RLSNGStart"
+                        android:layout_below="@id/RLSNGBuyIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:id="@+id/TVSNGStart"
+                            android:textColor="@color/colorWhite"
+                            android:text="Starting Chips :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/SNGseek3"
+                            android:layout_below="@+id/TVSNGStart"
+                            android:min="1000"
+                            android:max="50000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background"
+                        android:orientation="horizontal"
+                        android:id="@+id/LLSNGAutoStart"
+                        android:layout_below="@id/RLSNGStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="7dp"
+                            android:textSize="15dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorWhite"
+                            android:text="Blind Structure :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:paddingTop="7dp"
+                                android:textSize="15dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorWhite"
+                                android:text="Standard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:paddingTop="7dp"
+                                android:textSize="15dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorWhite"
+                                android:text="Turbo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+                        <ImageView
+                            android:src="@drawable/ques"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/LLSNGAuthorized"
+                        android:orientation="vertical"
+                        android:layout_below="@id/LLSNGAutoStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVSNGAuthorized"
+                                android:textColor="@color/colorWhite"
+                                android:text="Authorized to buy in "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBSNG1"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVSNGGPS"
+                                android:textColor="@color/colorWhite"
+                                android:text="GPS Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBSNG2"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@color/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:paddingTop="7dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="15dp"
+                                android:id="@+id/TVSNGIP"
+                                android:textColor="@color/colorWhite"
+                                android:text="IP Restriction "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <ToggleButton
+                                android:id="@+id/TBSNG3"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:background="@color/background"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/LLSNGAuthorized"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorWhite"
+                            android:text="Start"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

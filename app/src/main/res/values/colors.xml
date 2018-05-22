@@ -5,6 +5,21 @@
     <color name="colorAccent">#FF4081</color>
     <color name="icon">#23B177</color>
     <color name="background">#343435</color>
-    <color name="whiteicon">#f8fcf9</color>
     <color name="shadow">#424542</color>
+    <color name="Golden">#FF8DA10B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="black">#131313</color>
+    <color name="colorYellowDark">#F3D745</color>
+    <color name="windowBackground">#b4202020</color>
+    <color name="grayj">#302d2d</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#de3a38</color>
+    <color name="colorBlue">#09b5ff</color>
+    <color name="colorGrayDark">#939090</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorGreen">#408f0e</color>
+    <color name="colorGray">#cfcfcf</color>
+    <color name="AppGray">#1B2631</color>
+    <color name="AppBackground">#212F3D</color>
+
     </resources>

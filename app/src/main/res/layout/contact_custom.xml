@@ -11,28 +11,29 @@
         android:id="@+id/rl1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/title"
-        android:paddingTop="10dp"
-        android:textSize="20dp"
-        android:background="@drawable/bar"
-        android:layout_alignParentTop="true"
-        android:textAlignment="center"
-        android:textColor="@color/whiteicon"
-        android:text="Contact"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-    <ImageView
-        android:clickable="true"
-        android:id="@+id/close"
-        android:layout_marginTop="5dp"
-        android:layout_width="39dp"
-        android:layout_height="35dp"
-        android:layout_alignParentEnd="true"
-        android:adjustViewBounds="true"
-        android:src="@drawable/close"
-        android:focusable="true"/>
+        <TextView
+            android:id="@+id/title"
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="Contact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/close"
+            android:layout_marginTop="5dp"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/close"
+            android:focusable="true"/>
     </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/ll2"
         android:layout_width="match_parent"
@@ -50,12 +51,14 @@
             android:src="@drawable/game_icon"
             android:adjustViewBounds="true"/>
         <TextView
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="V 2.12.12"
             android:textColor="@color/icon"/>
 
     </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,18 +76,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:paddingTop="10dp"
                     android:layout_width="35dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:src="@drawable/email"
                     android:layout_marginStart="40dp"/>
                 <TextView
+                    android:paddingTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/email"
                     android:textSize="15dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:textColor="@color/whiteicon"/>
+                    android:textColor="@color/colorWhite"/>
             </LinearLayout>
 
         <ImageView
@@ -96,23 +101,26 @@
             android:layout_marginTop="3dp"
             android:layout_below="@id/IV1.1"/>
             <LinearLayout
+                android:paddingTop="14dp"
                 android:id="@+id/llfb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/llemail">
                 <ImageView
+                    android:paddingTop="10dp"
                     android:layout_width="35dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:src="@drawable/fb"
                     android:layout_marginStart="40dp"/>
                 <TextView
+                    android:paddingTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fb"
                     android:textSize="15dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:textColor="@color/whiteicon"/>
+                    android:textColor="@color/colorWhite"/>
             </LinearLayout>
 
         <ImageView
@@ -124,24 +132,28 @@
             android:layout_marginTop="3dp"
             android:layout_below="@id/IV1.2"/>
             <LinearLayout
+                android:paddingTop="16dp"
                 android:id="@+id/lltwitter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/llfb">
                 <ImageView
+                    android:paddingTop="10dp"
                     android:layout_width="35dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:src="@drawable/tw"
                     android:layout_marginStart="40dp"/>
                 <TextView
+                    android:paddingTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/twitter"
                     android:textSize="15dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
-                    android:textColor="@color/whiteicon"/>
+                    android:textColor="@color/colorWhite"/>
             </LinearLayout>
+
         <ImageView
             android:id="@+id/IV1.4"
             android:layout_width="match_parent"
@@ -150,25 +162,28 @@
             android:adjustViewBounds="true"
             android:layout_marginTop="3dp"
             android:layout_below="@id/IV1.3"
-            android:layout_marginBottom="15dp"/>
+            android:layout_marginBottom="5dp"/>
             <LinearLayout
+                android:paddingTop="18dp"
                 android:id="@+id/llwechat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lltwitter">
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/wechat"
-                        android:layout_marginStart="40dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/poker"
-                        android:textSize="15dp"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:textColor="@color/whiteicon"/>
+                <ImageView
+                    android:paddingTop="5dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/wechat"
+                    android:layout_marginStart="40dp"/>
+                <TextView
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/poker"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/colorWhite"/>
             </LinearLayout>
 
     </RelativeLayout>

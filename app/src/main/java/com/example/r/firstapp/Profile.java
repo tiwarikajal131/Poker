@@ -1,116 +1,122 @@
 package com.example.r.firstapp;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
-import android.view.Gravity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import static com.example.r.firstapp.R.drawable.window_1;
-import static com.example.r.firstapp.R.id.left;
-import static com.example.r.firstapp.R.id.tv_promo3_custom;
 
 public class Profile extends Fragment implements View.OnClickListener {
-    ImageView img1;
+    ImageView img2;
+    ImageView img3;
+    ImageView img4;
+    ImageView img7;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootview=inflater.inflate(R.layout.fragment_profile,container,false);
-        // Inflate the layout for this fragment
-        img1=(ImageView)rootview.findViewById(R.id.ivpromos);
-        img1.setOnClickListener(this);
+        img2=(ImageView)rootview.findViewById(R.id.ivpie);
+        img2.setOnClickListener(this);
+        img3=(ImageView)rootview.findViewById(R.id.ivsetting);
+        img3.setOnClickListener(this);
+        img4=(ImageView)rootview.findViewById(R.id.ivcontact);
+        img4.setOnClickListener(this);
+        img7=(ImageView)rootview.findViewById(R.id.head1);
+        img7.setOnClickListener(this);
+
         return rootview;
     }
 
-    /**
-     * Called when a view has been clicked.
-     *
-     * @param v The view that was clicked.
-     */
     @Override
     public void onClick(View v) {
         switch(v.getId())
         {
-            case R.id.ivpromos: {
-                Toast.makeText(getActivity(), "Image Clicked", Toast.LENGTH_LONG).show();
-                View view = getActivity().getLayoutInflater().inflate(R.layout.promos_custom, null);
-                TextView textView1 = view.findViewById(R.id.tv_promo1_custom);
-                TextView textView2 = view.findViewById(R.id.tv_promo2_custom);
-                TextView textView3 = view.findViewById(R.id.tv_promo3_custom);
-                AlertDialog.Builder alert = new AlertDialog.Builder(view.getContext());
-                TextView title = new TextView(view.getContext());
-                //title.setText("Promos");
-                //title.setTextColor(getResources().getColor(R.color.whiteicon));
-                //title.setPadding(10,10,10,10);
-                //alert.setCustomTitle(title);
-                // title.setGravity(Gravity.CENTER);
-                alert.setView(view);
-                // alert.setIcon(window_1);
-                final AlertDialog alert1 = alert.create();
-                alert1.show();
-                ImageView img2 = (ImageView) alert1.findViewById(R.id.close);
-                ImageView img1 = (ImageView) alert1.findViewById(R.id.buttonclick);
+            case R.id.ivpie:
+            {
+                View view2=getActivity().getLayoutInflater().inflate(R.layout.homegame_custom, null);
+                AlertDialog.Builder alert2=new AlertDialog.Builder(view2.getContext());
+                TextView title2= new TextView(view2.getContext());
+                alert2.setView(view2);
+                final AlertDialog alert_2= alert2.create();
+                alert_2.show();
+                ImageView img2=(ImageView) alert_2.findViewById(R.id.close1);
                 img2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        alert1.dismiss();
+                        alert_2.dismiss();
                     }
                 });
+                break;
+            }
+
+            case R.id.ivsetting: {
+                View view3 = getActivity().getLayoutInflater().inflate(R.layout.settings_custom, null);
+                AlertDialog.Builder alert3 = new AlertDialog.Builder(view3.getContext());
+                TextView title3 = new TextView(view3.getContext());
+                alert3.setView(view3);
+                final AlertDialog alert_3 = alert3.create();
+                alert_3.show();
+                final ImageView img1=(ImageView)alert_3.findViewById(R.id.IVtoggle);
                 img1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        alert1.dismiss();
+                        img1.setActivated(!img1.isActivated());
                     }
                 });
-                break;
-            }
-                //Dialog dialog=new Dialog(getActivity());
-                //View view=getActivity().getLayoutInflater().inflate(R.layout.promos_custom,null);
-                //dialog.setContentView(view);
-                //dialog.show();
-                //dialog.setTitle("Promos");
-
-
-            case R.id.ivcontact: {
-                Toast.makeText(getActivity(), "Image Clicked", Toast.LENGTH_LONG).show();
-                View view1 = getActivity().getLayoutInflater().inflate(R.layout.promos_custom, null);
-                AlertDialog.Builder alert2 = new AlertDialog.Builder(view1.getContext());
-                TextView title2 = new TextView(view1.getContext());
-                //title.setText("Promos");
-                //title.setTextColor(getResources().getColor(R.color.whiteicon));
-                //title.setPadding(10,10,10,10);
-                //alert.setCustomTitle(title);
-                // title.setGravity(Gravity.CENTER);
-                alert2.setView(view1);
-                // alert.setIcon(window_1);
-                final AlertDialog alert12 = alert2.create();
-                alert12.show();
-                ImageView img3 = (ImageView) alert12.findViewById(R.id.close);
-                img3.setOnClickListener(new View.OnClickListener() {
+                ImageView img2 = (ImageView) alert_3.findViewById(R.id.close);
+                img2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        alert12.dismiss();
+                        alert_3.dismiss();
                     }
                 });
                 break;
             }
-                //Dialog dialog=new Dialog(getActivity());
-                //View view=getActivity().getLayoutInflater().inflate(R.layout.promos_custom,null);
-                //dialog.setContentView(view);
-                //dialog.show();
-                //dialog.setTitle("Promos");
 
+            case R.id.ivcontact: {
+                View view4 = getActivity().getLayoutInflater().inflate(R.layout.contact_custom, null);
+                AlertDialog.Builder alert4 = new AlertDialog.Builder(view4.getContext());
+                TextView title4 = new TextView(view4.getContext());
+                alert4.setView(view4);
+                // alert.setIcon(window_1);
+                final AlertDialog alert_4 = alert4.create();
+                alert_4.show();
+                ImageView img4 = (ImageView) alert_4.findViewById(R.id.close);
+                img4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        alert_4.dismiss();
+                    }
+                });
+                break;
+            }
 
+            case R.id.head1: {
+                View view7 = getActivity().getLayoutInflater().inflate(R.layout.profile_modification, null);
+                AlertDialog.Builder alert7 = new AlertDialog.Builder(view7.getContext());
+                TextView title = new TextView(view7.getContext());
+                alert7.setView(view7);
+                final AlertDialog alert_7 = alert7.create();
+                alert_7.show();
+                ImageView img7 = (ImageView) alert_7.findViewById(R.id.close);
+                img7.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        alert_7.dismiss();
+                    }
+                });
 
+                break;
+            }
 
         }
     }

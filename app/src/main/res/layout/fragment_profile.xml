@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/AppBackground"
     tools:context=".Profile">
 
-       <ImageView
-           android:layout_marginTop="30dp"
-           android:id="@+id/head1"
-           android:layout_alignParentRight="true"
-           android:layout_alignParentLeft="true"
-           android:layout_width="100dp"
-           android:layout_height="150dp"
-           android:layout_marginBottom="5dp"
-           android:src="@drawable/head1"/>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/head1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/head2"/>
        <TextView
            android:id="@+id/tvName"
            android:text="KajalT"
@@ -25,7 +25,7 @@
            android:layout_height="wrap_content"
            android:layout_below="@id/head1"
            android:layout_marginBottom="5dp"
-           android:layout_marginStart="160dp"/>
+           android:layout_centerInParent="true"/>
        <TextView
            android:id="@+id/tvUserId"
            android:text="@string/user_id"
@@ -33,9 +33,9 @@
            android:layout_height="wrap_content"
            android:layout_below="@+id/tvName"
            android:layout_marginStart="150dp"
-           android:textColor="@color/whiteicon"/>
+           android:textColor="@color/colorWhite"/>
        <TextView
-           android:textColor="@color/whiteicon"
+           android:textColor="@color/colorWhite"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="@string/_0000"
@@ -57,82 +57,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/head1">
 
         <RelativeLayout
             android:id="@+id/rlPromoPie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="150dp"
             android:paddingLeft="15dp">
 
             <ImageView
-                android:id="@+id/ivpromos"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/promo"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/ivpromos"
-                android:layout_marginLeft="50dp"
-                android:text="Promos"
-                android:textColor="@color/whiteicon" />
-
-            <ImageView
-                android:id="@+id/ivpie"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_toRightOf="@id/ivpromos"
-                android:src="@drawable/pie"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/ivpie"
-                android:layout_marginLeft="130dp"
-                android:text="Home Game"
-                android:textColor="@color/whiteicon" />
-
-            <ImageView
-                android:id="@+id/ivsetting"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/ivpie"
-                android:src="@drawable/setting"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/ivsetting"
-                android:layout_marginLeft="232dp"
-                android:text="Settings"
-                android:textColor="@color/whiteicon"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rlContactCredits"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/rlPromoPie"
-            android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:clickable="true"
                 android:id="@+id/ivcontact"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/contact"
-                android:focusable="true" />
+                android:src="@drawable/contact" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -140,39 +81,38 @@
                 android:layout_below="@id/ivcontact"
                 android:layout_marginLeft="50dp"
                 android:text="Contact"
-                android:textColor="@color/whiteicon" />
+                android:textColor="@color/colorWhite" />
 
             <ImageView
-                android:id="@+id/ivcredits"
+                android:id="@+id/ivpie"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_toRightOf="@id/ivcontact"
-                android:src="@drawable/credit"/>
+                android:src="@drawable/pie" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ivcredits"
-                android:layout_marginLeft="145dp"
-                android:text="Credits"
-                android:textColor="@color/whiteicon" />
+                android:layout_below="@id/ivpie"
+                android:layout_marginLeft="130dp"
+                android:text="Home Game"
+                android:textColor="@color/colorWhite" />
 
             <ImageView
-                android:id="@+id/ivfair_gaming"
+                android:id="@+id/ivsetting"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/ivcredits"
-                android:src="@drawable/fair_gaming"/>
+                android:layout_toRightOf="@id/ivpie"
+                android:src="@drawable/setting" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ivfair_gaming"
-                android:layout_marginLeft="218dp"
-                android:text="Fair Gaming"
-                android:textColor="@color/whiteicon" />
-
+                android:layout_below="@id/ivsetting"
+                android:layout_marginLeft="232dp"
+                android:text="Settings"
+                android:textColor="@color/colorWhite" />
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

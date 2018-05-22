@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plo">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/background" />
+
+    <include
+        layout="@layout/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fitsSystemWindows="true"/>
+
+    <RelativeLayout
+        android:background="@drawable/bar"
+        android:id="@+id/text"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:text="PLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/IVBack"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:id="@+id/tabs"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/txtTable"
+            android:text="Table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ques"
+            android:id="@+id/imgVTips"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/txtPlayers"
+            android:text="Players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/txtStakes"
+            android:text="Stakes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/txtBuy"
+            android:text="Min Buy-in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_above="@id/bottom"
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@color/colorBlack"
+                android:orientation="vertical"
+                android:id="@+id/linlayrank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/manchester"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Manchester"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="5/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/sheffield"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sheffield"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="8/9"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/liverpool"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Liverpool"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="6/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/malacca"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Malacca"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="6/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/manila"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Manila"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="6/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/manchester"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Manchester"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="6/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/liverpool"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="80dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/uk"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Liverpool"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" -->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/round_up"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_up"
+                        android:text="5/6"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1/2"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dollar_128"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@color/colorBlack"
+                android:orientation="vertical"
+                android:id="@+id/linlayreward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="Rewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/button"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:text="Play    Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

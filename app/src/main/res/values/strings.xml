@@ -12,10 +12,36 @@
     <string name="_0000"> 0000</string>
     <string name="user_id">User ID : </string>
     <string name="promo1">  PPPoker offers tons of diamonds and cash rewards forPPPoker users who can help us promote ourproduct to areas outside your country.</string>
-    <string name="promo2">  If you have any global resources that may help us, be free to contact us at info@pppoker.net and leave your contact number in the mail</string>.
+    <string name="promo2">  If you have any global resources that may help us, be free to contact us at info@pppoker.net and leave your contact number in the mail</string>
+    .
     <string name="promo3">  Our support team will contact you immediately. Sincere thanks from PPPOker.</string>
     <string name="email">info@pppoker.net</string>
     <string name="fb">www.facebook.com</string>
     <string name="twitter">twitter.com</string>
     <string name="poker">The PPPoker</string>
+    <string name="shop">SHOP</string>
+    <string name="item">ITEM</string>
+    <string name="diamond">DIAMOND</string>
+    <string name="hot_picks">Hot Picks</string>
+    <string name="_6000">6000</string>
+    <string name="_60">60</string>
+    <string name="_30000">30000</string>
+    <string name="_120000">120000</string>
+    <string name="vip_card">VIP Card</string>
+    <string name="_30_days">30 days</string>
+    <string name="sliver_card">Sliver Card</string>
+    <string name="gold_card">Gold Card</string>
+    <string name="black_card">Black Card</string>
+    <string name="_0_99">$0.99</string>
+    <string name="_300">300</string>
+    <string name="_4_99">$4.99</string>
+    <string name="_780">780</string>
+    <string name="_12_99">$12.99</string>
+    <string name="_1180_38">1180+38</string>
+    <string name="_19_99">$19.99</string>
+    <string name="home_game_data">Home Game Data</string>
+    <string name="data">No data available, invite friends to play now</string>
+    <string name="guest_login">Guest login cannot guarantee the stability
+        of your data.Please register an account andbind you guest account to it, your current data will then be saved.</string>
+
 </resources>
